@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Projecto>
+	<Definicoes>
+		<Sistema>PRJ</Sistema>
+		<Cliente>QUIDGEST</Cliente>
+		<Versao>2504</Versao>
+	</Definicoes>
+	<Modulos>
+		<Modulo ID="PRJ">
+			<PROG>My application</PROG>
+			<PLATAFOR>VUE</PLATAFOR>
+		</Modulo>
+	</Modulos>
+</Projecto>
