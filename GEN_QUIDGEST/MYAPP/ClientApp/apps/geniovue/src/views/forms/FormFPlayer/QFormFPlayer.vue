@@ -96,6 +96,95 @@
 			data-key="F_PLAYER"
 			:data-loading="!formInitialDataLoaded || !isActiveForm">
 			<template v-if="formControl.initialized && showFormBody">
+				<q-row v-if="controls.F_PLAYER__PLAYER__NAME.isVisible || controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible || controls.F_PLAYER__PLAYER__GENDER.isVisible || controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible || controls.F_PLAYER__PLAYER__POSITION.isVisible">
+					<q-col
+						v-if="controls.F_PLAYER__PLAYER__NAME.isVisible"
+						cols="auto">
+						<base-input-structure
+							v-if="controls.F_PLAYER__PLAYER__NAME.isVisible"
+							class="i-text"
+							v-bind="controls.F_PLAYER__PLAYER__NAME"
+							v-on="controls.F_PLAYER__PLAYER__NAME.handlers"
+							:loading="controls.F_PLAYER__PLAYER__NAME.props.loading"
+							:reporting-mode-on="reportingModeCAV"
+							:suggestion-mode-on="suggestionModeOn">
+							<q-text-field
+								v-bind="controls.F_PLAYER__PLAYER__NAME.props"
+								@blur="onBlur(controls.F_PLAYER__PLAYER__NAME, model.ValName.value)"
+								@change="model.ValName.fnUpdateValueOnChange" />
+						</base-input-structure>
+					</q-col>
+					<q-col
+						v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
+						cols="auto">
+						<base-input-structure
+							v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
+							class="i-text"
+							v-bind="controls.F_PLAYER__PLAYER__BIRTHDATE"
+							v-on="controls.F_PLAYER__PLAYER__BIRTHDATE.handlers"
+							:loading="controls.F_PLAYER__PLAYER__BIRTHDATE.props.loading"
+							:reporting-mode-on="reportingModeCAV"
+							:suggestion-mode-on="suggestionModeOn">
+							<q-date-time-picker
+								v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
+								v-bind="controls.F_PLAYER__PLAYER__BIRTHDATE.props"
+								:model-value="model.ValBirthdate.value"
+								@reset-icon-click="model.ValBirthdate.fnUpdateValue(model.ValBirthdate.originalValue ?? new Date())"
+								@update:model-value="model.ValBirthdate.fnUpdateValue($event ?? '')" />
+						</base-input-structure>
+					</q-col>
+					<q-col
+						v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
+						cols="auto">
+						<base-input-structure
+							v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
+							class="i-text"
+							v-bind="controls.F_PLAYER__PLAYER__GENDER"
+							v-on="controls.F_PLAYER__PLAYER__GENDER.handlers"
+							:loading="controls.F_PLAYER__PLAYER__GENDER.props.loading"
+							:reporting-mode-on="reportingModeCAV"
+							:suggestion-mode-on="suggestionModeOn">
+							<q-select
+								v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
+								v-bind="controls.F_PLAYER__PLAYER__GENDER.props"
+								@update:model-value="model.ValGender.fnUpdateValue" />
+						</base-input-structure>
+					</q-col>
+					<q-col
+						v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
+						cols="auto">
+						<base-input-structure
+							v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
+							class="i-text"
+							v-bind="controls.F_PLAYER__PLAYER__HEIGHT_CM"
+							v-on="controls.F_PLAYER__PLAYER__HEIGHT_CM.handlers"
+							:loading="controls.F_PLAYER__PLAYER__HEIGHT_CM.props.loading"
+							:reporting-mode-on="reportingModeCAV"
+							:suggestion-mode-on="suggestionModeOn">
+							<q-numeric-input
+								v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
+								v-bind="controls.F_PLAYER__PLAYER__HEIGHT_CM.props"
+								@update:model-value="model.ValHeight_cm.fnUpdateValue" />
+						</base-input-structure>
+					</q-col>
+					<q-col
+						v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
+						cols="auto">
+						<base-input-structure
+							v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
+							class="i-text"
+							v-bind="controls.F_PLAYER__PLAYER__POSITION"
+							v-on="controls.F_PLAYER__PLAYER__POSITION.handlers"
+							:loading="controls.F_PLAYER__PLAYER__POSITION.props.loading"
+							:reporting-mode-on="reportingModeCAV"
+							:suggestion-mode-on="suggestionModeOn">
+							<q-select
+								v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
+								v-bind="controls.F_PLAYER__PLAYER__POSITION.props"
+								@update:model-value="model.ValPosition.fnUpdateValue" />
+						</base-input-structure>
+					</q-col>
+				</q-row>
 			</template>
 		</q-container>
 	</teleport>
