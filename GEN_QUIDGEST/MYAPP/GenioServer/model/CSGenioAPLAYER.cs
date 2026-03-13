@@ -64,6 +64,52 @@ namespace CSGenio.business
 			info.RegisterFieldDB(Qfield);
 
 			//- - - - - - - - - - - - - - - - - - -
+			Qfield = new Field(info.Alias, "birthdate", FieldType.DATE);
+			Qfield.FieldDescription = "Birthdate";
+			Qfield.FieldSize =  8;
+			Qfield.MQueue = false;
+			Qfield.CavDesignation = "BIRTHDATE22743";
+
+            Qfield.NotNull = true;
+			Qfield.Dupmsg = "";
+			info.RegisterFieldDB(Qfield);
+
+			//- - - - - - - - - - - - - - - - - - -
+			Qfield = new Field(info.Alias, "gender", FieldType.ARRAY_TEXT);
+			Qfield.FieldDescription = "Gender";
+			Qfield.FieldSize =  6;
+			Qfield.MQueue = false;
+			Qfield.CavDesignation = "GENDER44172";
+
+			Qfield.Dupmsg = "";
+            Qfield.ArrayName = "dbo.GetValArrayCgender";
+            Qfield.ArrayClassName = "Gender";
+			info.RegisterFieldDB(Qfield);
+
+			//- - - - - - - - - - - - - - - - - - -
+			Qfield = new Field(info.Alias, "height_cm", FieldType.NUMERIC);
+			Qfield.FieldDescription = "Height";
+			Qfield.FieldSize =  10;
+			Qfield.MQueue = false;
+			Qfield.IntegerDigits = 10;
+			Qfield.CavDesignation = "HEIGHT11955";
+
+			Qfield.Dupmsg = "";
+			info.RegisterFieldDB(Qfield);
+
+			//- - - - - - - - - - - - - - - - - - -
+			Qfield = new Field(info.Alias, "position", FieldType.ARRAY_TEXT);
+			Qfield.FieldDescription = "Position";
+			Qfield.FieldSize =  2;
+			Qfield.MQueue = false;
+			Qfield.CavDesignation = "POSITION54869";
+
+			Qfield.Dupmsg = "";
+            Qfield.ArrayName = "dbo.GetValArrayCposition";
+            Qfield.ArrayClassName = "Position";
+			info.RegisterFieldDB(Qfield);
+
+			//- - - - - - - - - - - - - - - - - - -
 			Qfield = new Field(info.Alias, "zzstate", FieldType.INTEGER);
 			Qfield.FieldDescription = "Estado da ficha";
 			info.RegisterFieldDB(Qfield);
@@ -77,6 +123,10 @@ namespace CSGenio.business
 		{
 			// Daughters Relations
 			//------------------------------
+			info.ChildTable = new ChildRelation[3];
+			info.ChildTable[0]= new ChildRelation("skill_player", new String[] {"player_fk"}, DeleteProc.NA);
+			info.ChildTable[1]= new ChildRelation("player_team", new String[] {"player_fk"}, DeleteProc.NA);
+			info.ChildTable[2]= new ChildRelation("stats", new String[] {"player_fk"}, DeleteProc.NA);
 
 			// Mother Relations
 			//------------------------------
@@ -232,6 +282,50 @@ namespace CSGenio.business
 			set { insertNameValueField(FldName, value); }
 		}
 
+		/// <summary>Field : "Birthdate" Tipo: "D" Formula:  ""</summary>
+		public static FieldRef FldBirthdate { get { return m_fldBirthdate; } }
+		private static FieldRef m_fldBirthdate = new FieldRef("player", "birthdate");
+
+		/// <summary>Field : "Birthdate" Tipo: "D" Formula:  ""</summary>
+		public DateTime ValBirthdate
+		{
+			get { return (DateTime)returnValueField(FldBirthdate); }
+			set { insertNameValueField(FldBirthdate, value); }
+		}
+
+		/// <summary>Field : "Gender" Tipo: "AC" Formula:  ""</summary>
+		public static FieldRef FldGender { get { return m_fldGender; } }
+		private static FieldRef m_fldGender = new FieldRef("player", "gender");
+
+		/// <summary>Field : "Gender" Tipo: "AC" Formula:  ""</summary>
+		public string ValGender
+		{
+			get { return (string)returnValueField(FldGender); }
+			set { insertNameValueField(FldGender, value); }
+		}
+
+		/// <summary>Field : "Height" Tipo: "N" Formula:  ""</summary>
+		public static FieldRef FldHeight_cm { get { return m_fldHeight_cm; } }
+		private static FieldRef m_fldHeight_cm = new FieldRef("player", "height_cm");
+
+		/// <summary>Field : "Height" Tipo: "N" Formula:  ""</summary>
+		public decimal ValHeight_cm
+		{
+			get { return (decimal)returnValueField(FldHeight_cm); }
+			set { insertNameValueField(FldHeight_cm, value); }
+		}
+
+		/// <summary>Field : "Position" Tipo: "AC" Formula:  ""</summary>
+		public static FieldRef FldPosition { get { return m_fldPosition; } }
+		private static FieldRef m_fldPosition = new FieldRef("player", "position");
+
+		/// <summary>Field : "Position" Tipo: "AC" Formula:  ""</summary>
+		public string ValPosition
+		{
+			get { return (string)returnValueField(FldPosition); }
+			set { insertNameValueField(FldPosition, value); }
+		}
+
 		/// <summary>Field : "ZZSTATE" Type: "INT" Formula:  ""</summary>
 		public static FieldRef FldZzstate { get { return m_fldZzstate; } }
 		private static FieldRef m_fldZzstate = new FieldRef("player", "zzstate");
@@ -329,7 +423,7 @@ namespace CSGenio.business
 		// USE /[MANUAL PRJ TABAUX PLAYER]/
 
  
-   
+       
 
 	}
 }

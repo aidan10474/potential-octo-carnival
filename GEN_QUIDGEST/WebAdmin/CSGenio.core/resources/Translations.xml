@@ -3,8 +3,14 @@
   <msg id="Id" code="ID36840">
     <ENUS>Id</ENUS>
   </msg>
+  <msg id="Gender" code="GENDER44172">
+    <ENUS>Gender</ENUS>
+  </msg>
   <msg id="Module" code="MODULE42049">
     <ENUS>Module</ENUS>
+  </msg>
+  <msg id="games_played" code="GAMES_PLAYED27662">
+    <ENUS>games_played</ENUS>
   </msg>
   <msg id="Duration" code="DURATION40426">
     <ENUS>Duration</ENUS>
@@ -18,11 +24,26 @@
   <msg id="Process mode" code="PROCESS_MODE22419">
     <ENUS>Process mode</ENUS>
   </msg>
+  <msg id="Stats" code="STATS33120">
+    <ENUS>Stats</ENUS>
+  </msg>
+  <msg id="Teams" code="TEAMS47429">
+    <ENUS>Teams</ENUS>
+  </msg>
+  <msg id="player_fk" code="PLAYER_FK43140">
+    <ENUS>player_fk</ENUS>
+  </msg>
   <msg id="Async process attachments" code="ASYNC_PROCESS_ATTACH04785">
     <ENUS>Async process attachments</ENUS>
   </msg>
+  <msg id="Cancelar" code="CANCELAR49513">
+    <ENUS>Cancelar</ENUS>
+  </msg>
   <msg id="Password" code="PASSWORD09467">
     <ENUS>Password</ENUS>
+  </msg>
+  <msg id="Rating" code="RATING45804">
+    <ENUS>Rating</ENUS>
   </msg>
   <msg id="Document" code="DOCUMENT00695">
     <ENUS>Document</ENUS>
@@ -48,11 +69,20 @@
   <msg id="Value" code="VALUE10285">
     <ENUS>Value</ENUS>
   </msg>
+  <msg id="description" code="DESCRIPTION03846">
+    <ENUS>description</ENUS>
+  </msg>
+  <msg id="rebounds" code="REBOUNDS32845">
+    <ENUS>rebounds</ENUS>
+  </msg>
   <msg id="Logbook" code="LOGBOOK00124">
     <ENUS>Logbook</ENUS>
   </msg>
   <msg id="Async process argument" code="ASYNC_PROCESS_ARGUME19111">
     <ENUS>Async process argument</ENUS>
+  </msg>
+  <msg id="Small Forward" code="SMALL_FORWARD09705">
+    <ENUS>Small Forward</ENUS>
   </msg>
   <msg id="System" code="SYSTEM02957">
     <ENUS>System</ENUS>
@@ -69,8 +99,20 @@
   <msg id="Contact" code="CONTACT59247">
     <ENUS>Contact</ENUS>
   </msg>
+  <msg id="Skill_Players" code="SKILL_PLAYERS53105">
+    <ENUS>Skill_Players</ENUS>
+  </msg>
+  <msg id="Gravar" code="GRAVAR45301">
+    <ENUS>Gravar</ENUS>
+  </msg>
   <msg id="Manual destination" code="MANUAL_DESTINATION21892">
     <ENUS>Manual destination</ENUS>
+  </msg>
+  <msg id="Shooting Guard" code="SHOOTING_GUARD14552">
+    <ENUS>Shooting Guard</ENUS>
+  </msg>
+  <msg id="Male" code="MALE32397">
+    <ENUS>Male</ENUS>
   </msg>
   <msg id="Username" code="USERNAME51409">
     <ENUS>Username</ENUS>
@@ -96,6 +138,9 @@
   <msg id="Aggregate" code="AGGREGATE05721">
     <ENUS>Aggregate</ENUS>
   </msg>
+  <msg id="Team" code="TEAM59909">
+    <ENUS>Team</ENUS>
+  </msg>
   <msg id="Estados do processo" code="ESTADOS_DO_PROCESSO59118">
     <ENUS>Estados do processo</ENUS>
   </msg>
@@ -104,6 +149,9 @@
   </msg>
   <msg id="Quidgest" code="QUIDGEST26196">
     <ENUS>Quidgest</ENUS>
+  </msg>
+  <msg id="team_fk" code="TEAM_FK32854">
+    <ENUS>team_fk</ENUS>
   </msg>
   <msg id="Estado do processo" code="ESTADO_DO_PROCESSO07540">
     <ENUS>Estado do processo</ENUS>
@@ -132,6 +180,9 @@
   <msg id="Image" code="IMAGE65174">
     <ENUS>Image</ENUS>
   </msg>
+  <msg id="Skill_Player" code="SKILL_PLAYER00402">
+    <ENUS>Skill_Player</ENUS>
+  </msg>
   <msg id="Sends email?" code="SENDS_EMAIL_12942">
     <ENUS>Sends email?</ENUS>
   </msg>
@@ -141,11 +192,17 @@
   <msg id="Process ID" code="PROCESS_ID11161">
     <ENUS>Process ID</ENUS>
   </msg>
+  <msg id="skill_fk" code="SKILL_FK25820">
+    <ENUS>skill_fk</ENUS>
+  </msg>
   <msg id="Certified Series Number" code="CERTIFIED_SERIES_NUM14349">
     <ENUS>Certified Series Number</ENUS>
   </msg>
   <msg id="Modo de processamento" code="MODO_DE_PROCESSAMENT14469">
     <ENUS>Modo de processamento</ENUS>
+  </msg>
+  <msg id="points" code="POINTS56147">
+    <ENUS>points</ENUS>
   </msg>
   <msg id="Created by" code="CREATED_BY12292">
     <ENUS>Created by</ENUS>
@@ -162,11 +219,17 @@
   <msg id="Entid key" code="ENTID_KEY04396">
     <ENUS>Entid key</ENUS>
   </msg>
+  <msg id="Player_team" code="PLAYER_TEAM42526">
+    <ENUS>Player_team</ENUS>
+  </msg>
   <msg id="Notification Message" code="NOTIFICATION_MESSAGE31108">
     <ENUS>Notification Message</ENUS>
   </msg>
   <msg id="Notification Email Signatures" code="NOTIFICATION_EMAIL_S37352">
     <ENUS>Notification Email Signatures</ENUS>
+  </msg>
+  <msg id="Position" code="POSITION54869">
+    <ENUS>Position</ENUS>
   </msg>
   <msg id="Saves on DB?" code="SAVES_ON_DB_61384">
     <ENUS>Saves on DB?</ENUS>
@@ -204,11 +267,20 @@
   <msg id="Message" code="MESSAGE30602">
     <ENUS>Message</ENUS>
   </msg>
+  <msg id="Player_teams" code="PLAYER_TEAMS36968">
+    <ENUS>Player_teams</ENUS>
+  </msg>
+  <msg id="Skill" code="SKILL11783">
+    <ENUS>Skill</ENUS>
+  </msg>
   <msg id="User ID" code="USER_ID13914">
     <ENUS>User ID</ENUS>
   </msg>
   <msg id="Text after signature" code="TEXT_AFTER_SIGNATURE11837">
     <ENUS>Text after signature</ENUS>
+  </msg>
+  <msg id="skill_name" code="SKILL_NAME51491">
+    <ENUS>skill_name</ENUS>
   </msg>
   <msg id="Role" code="ROLE60946">
     <ENUS>Role</ENUS>
@@ -228,14 +300,26 @@
   <msg id="Notification Email Signature" code="NOTIFICATION_EMAIL_S62518">
     <ENUS>Notification Email Signature</ENUS>
   </msg>
+  <msg id="Birthdate" code="BIRTHDATE22743">
+    <ENUS>Birthdate</ENUS>
+  </msg>
   <msg id="Real time status" code="REAL_TIME_STATUS00476">
     <ENUS>Real time status</ENUS>
+  </msg>
+  <msg id="date_ended" code="DATE_ENDED27868">
+    <ENUS>date_ended</ENUS>
+  </msg>
+  <msg id="Female" code="FEMALE46107">
+    <ENUS>Female</ENUS>
   </msg>
   <msg id="Subject" code="SUBJECT33942">
     <ENUS>Subject</ENUS>
   </msg>
   <msg id="Start time" code="START_TIME30037">
     <ENUS>Start time</ENUS>
+  </msg>
+  <msg id="Positions" code="POSITIONS36644">
+    <ENUS>Positions</ENUS>
   </msg>
   <msg id="Process Type" code="PROCESS_TYPE50593">
     <ENUS>Process Type</ENUS>
@@ -248,6 +332,9 @@
   </msg>
   <msg id="Host" code="HOST49573">
     <ENUS>Host</ENUS>
+  </msg>
+  <msg id="Skills" code="SKILLS64981">
+    <ENUS>Skills</ENUS>
   </msg>
   <msg id="Result message" code="RESULT_MESSAGE40830">
     <ENUS>Result message</ENUS>
@@ -279,8 +366,14 @@
   <msg id="Sender" code="SENDER07671">
     <ENUS>Sender</ENUS>
   </msg>
+  <msg id="Center" code="CENTER62779">
+    <ENUS>Center</ENUS>
+  </msg>
   <msg id="To" code="TO55217">
     <ENUS>To</ENUS>
+  </msg>
+  <msg id="Point Guard" code="POINT_GUARD16925">
+    <ENUS>Point Guard</ENUS>
   </msg>
   <msg id="Async process arguments" code="ASYNC_PROCESS_ARGUME13794">
     <ENUS>Async process arguments</ENUS>
@@ -297,14 +390,23 @@
   <msg id="Bcc" code="BCC22049">
     <ENUS>Bcc</ENUS>
   </msg>
+  <msg id="Height" code="HEIGHT11955">
+    <ENUS>Height</ENUS>
+  </msg>
   <msg id="Roles" code="ROLES61449">
     <ENUS>Roles</ENUS>
   </msg>
   <msg id="Create a website alert" code="CREATE_A_WEBSITE_ALE02013">
     <ENUS>Create a website alert</ENUS>
   </msg>
+  <msg id="assists" code="ASSISTS50987">
+    <ENUS>assists</ENUS>
+  </msg>
   <msg id="Routine" code="ROUTINE58306">
     <ENUS>Routine</ENUS>
+  </msg>
+  <msg id="date_started" code="DATE_STARTED24788">
+    <ENUS>date_started</ENUS>
   </msg>
   <msg id="Unidade orgânica" code="UNIDADE_ORGANICA38383">
     <ENUS>Unidade orgânica</ENUS>
@@ -324,6 +426,9 @@
   <msg id="Desautorizado" code="DESAUTORIZADO34584">
     <ENUS>Desautorizado</ENUS>
   </msg>
+  <msg id="Power Forward" code="POWER_FORWARD00086">
+    <ENUS>Power Forward</ENUS>
+  </msg>
   <msg id="Canceled by" code="CANCELED_BY01167">
     <ENUS>Canceled by</ENUS>
   </msg>
@@ -335,6 +440,9 @@
   </msg>
   <msg id="Modules" code="MODULES33542">
     <ENUS>Modules</ENUS>
+  </msg>
+  <msg id="Genders" code="GENDERS24703">
+    <ENUS>Genders</ENUS>
   </msg>
   <msg id="a:" code="A_47238">
     <ENUS>to:</ENUS>
@@ -362,9 +470,6 @@
   </msg>
   <msg id="Campo Vazio/Alterado" code="CAMPO_VAZIO_ALTERADO56548">
     <ENUS>Empty/Changed Field</ENUS>
-  </msg>
-  <msg id="Cancelar" code="CANCELAR49513">
-    <ENUS>Cancel</ENUS>
   </msg>
   <msg id="consulta" code="CONSULTA23186">
     <ENUS>Query</ENUS>
@@ -407,9 +512,6 @@
   </msg>
   <msg id="Form" code="FORM54242">
     <ENUS>Form</ENUS>
-  </msg>
-  <msg id="Gravar" code="GRAVAR45301">
-    <ENUS>Save</ENUS>
   </msg>
   <msg id="Grupo" code="GRUPO22663">
     <ENUS>Group</ENUS>
@@ -4885,7 +4987,7 @@
     <ENUS>Select</ENUS>
   </msg>
   <msg id="&amp;Cancelar" code="_CANCELAR09516">
-    <ENUS>Cancel</ENUS>
+    <ENUS>&amp;Cancelar</ENUS>
   </msg>
   <msg id="&amp;Alterar" code="_ALTERAR63438">
     <ENUS>Change</ENUS>
@@ -5089,7 +5191,7 @@
     <ENUS>&amp;Queue</ENUS>
   </msg>
   <msg id="&amp;Gravar" code="_GRAVAR27930">
-    <ENUS>Save</ENUS>
+    <ENUS>&amp;Gravar</ENUS>
   </msg>
   <msg id="&amp;Tabela" code="_TABELA23959">
     <ENUS>Table</ENUS>
@@ -5167,7 +5269,7 @@
     <ENUS>Sum</ENUS>
   </msg>
   <msg id="Gra&amp;var" code="GRA_VAR31620">
-    <ENUS>Save</ENUS>
+    <ENUS>Gra&amp;var</ENUS>
   </msg>
   <msg id="Utilizad&amp;or:" code="UTILIZAD_OR_18947">
     <ENUS>Username:</ENUS>

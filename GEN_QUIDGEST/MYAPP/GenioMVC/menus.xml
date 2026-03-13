@@ -1,4 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-16"?>
 <ArrayOfMenuEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <MenuEntry TYPE="ITEM" DESC="MY_APPLICATION56216" ID="PRJ" IMG="" IMGVUE="" LVL="0" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" />
+  <MenuEntry TYPE="ITEM" DESC="MY_APPLICATION56216" ID="PRJ" IMG="" IMGVUE="" LVL="0" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false">
+    <MENU TYPE="ITEM" DESC="PLAYERS11892" SIGLA="" ID="1" HELPTITLE="" LVL="1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="1" DEFAULTACTION="">
+      <ACCESS>1</ACCESS>
+      <MENU TYPE="ITEM" DESC="PLAYERS11892" ID="11" PRTID="1" IMG="" ACT="GenGenio.MenuDBEdit" ACTMVC="PRJ_Menu_11" ACTVUE="menu-PRJ_11" CONT="PLAYER" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="11">
+        <MENU TYPE="ITEM" ID="111" PRTID="11" IMG="" ACT="GenGenio.MenuFormConsulta" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="111" />
+      </MENU>
+    </MENU>
+    <MENU TYPE="ITEM" DESC="PLAYER_TEAMS36968" SIGLA="" ID="2" HELPTITLE="" LVL="1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="2" DEFAULTACTION="">
+      <ACCESS>1</ACCESS>
+      <MENU TYPE="ITEM" DESC="PLAYER_TEAMS36968" ID="21" PRTID="2" IMG="" ACT="GenGenio.MenuDBEdit" ACTMVC="PRJ_Menu_21" ACTVUE="menu-PRJ_21" CONT="PLAYER_TEAM" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="21">
+        <MENU TYPE="ITEM" ID="211" PRTID="21" IMG="" ACT="GenGenio.MenuFormConsulta" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="211" />
+      </MENU>
+    </MENU>
+    <MENU TYPE="ITEM" DESC="SKILL_PLAYERS53105" SIGLA="" ID="3" HELPTITLE="" LVL="1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="3" DEFAULTACTION="">
+      <ACCESS>1</ACCESS>
+      <MENU TYPE="ITEM" DESC="SKILL_PLAYERS53105" ID="31" PRTID="3" IMG="" ACT="GenGenio.MenuDBEdit" ACTMVC="PRJ_Menu_31" ACTVUE="menu-PRJ_31" CONT="SKILL_PLAYER" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="31">
+        <MENU TYPE="ITEM" ID="311" PRTID="31" IMG="" ACT="GenGenio.MenuFormConsulta" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="311" />
+      </MENU>
+    </MENU>
+    <MENU TYPE="ITEM" DESC="STATS33120" SIGLA="" ID="4" HELPTITLE="" LVL="1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="4" DEFAULTACTION="">
+      <ACCESS>1</ACCESS>
+      <MENU TYPE="ITEM" DESC="STATS33120" ID="41" PRTID="4" IMG="" ACT="GenGenio.MenuDBEdit" ACTMVC="PRJ_Menu_41" ACTVUE="menu-PRJ_41" CONT="STATS" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="41">
+        <MENU TYPE="ITEM" ID="411" PRTID="41" IMG="" ACT="GenGenio.MenuFormConsulta" LVL="-1" PREVIEW="false" SEPARATES="false" SUMMENU="false" HIDEMENUSUM="false" HASCONDITION="false" ISFORM="false" ORDER="411" />
+      </MENU>
+    </MENU>
+  </MenuEntry>
 </ArrayOfMenuEntry>

@@ -1,38 +1,30 @@
 ﻿<template>
 	<div
 		v-if="$app.layout.BookmarkEnable && userIsLoggedIn"
-		class="n-sidebar__section bookmarks__container">
-		<ul
-			id="bookmarks-tree-view"
-			class="nav nav-pills nav-sidebar n-sidebar__nav d-block">
-			<li :class="[{ 'menu-open': bookmarkMenuIsOpen }, 'nav-item', 'n-sidebar__nav-item', 'has-treeview']">
+		class="bookmarks__container">
+		<ul class="nav">
+			<li
+				ref="menuContainer"
+				class="dropdown"
+				@focusout="onFocusoutMenu">
 				<a
 					ref="menuButton"
-					id="bookmarks__toggle"
+					class="bookmarks__header"
 					role="button"
 					href="#"
-					:class="['nav-link n-sidebar__nav-link', 'has-icon', 'bookmarks__menu-text']"
-					@click.stop.prevent="toggleBookmarksMenu"
+					:aria-expanded="bookmarkMenuIsOpen"
+					:title="texts.favorites"
+					@click.stop.prevent="toggleMenu"
 					@keyup="menuItemKeyup">
-					<q-icon-svg
-						icon="favourites"
-						:custom-classes="['nav-icon', 'n-sidebar__icon', 'e-icon', 'section-header-icon']" />
-
-					<p>
-						{{ texts.favorites }}
-						<q-icon
-							icon="expand"
-							class="right" />
-					</p>
+					<q-icon icon="bookmark" />
 				</a>
 
-				<transition name="sidebar-dropdown">
-					<bookmarks-content
-						v-if="bookmarkMenuIsOpen"
-						:classes="['d-block', 'nav', 'nav-treeview']"
-						:show-titles="!sidebarIsCollapsed"
-						@keyup="menuItemKeyup" />
-				</transition>
+				<bookmarks-content
+					:classes="['dropdown-menu', { 'show': bookmarkMenuIsOpen }, 'bookmarks__content']"
+					@menu-action="setBookmarkMenuState(false)"
+					@add="setBookmarkMenuState(false)"
+					@remove="focusItem"
+					@keyup="menuItemKeyup" />
 			</li>
 		</ul>
 	</div>
@@ -47,6 +39,8 @@
 
 	export default {
 		name: 'QBookmarks',
+
+		emits: ['open-menu'],
 
 		components: {
 			BookmarksContent
@@ -68,6 +62,22 @@
 		},
 
 		methods: {
+			/**
+			 * Called when focusing away from the bookmarks button or dropdown.
+			 */
+			onFocusoutMenu(event)
+			{
+				const menuContainer = this.$refs?.menuContainer
+				const focusedElem = event?.relatedTarget
+				//If the focus went to an element within the menu button or dropdown,
+				//logically, the menu is still focused
+				if(menuContainer.contains(focusedElem))
+					return
+
+				//Menu not focused. Close dropdown.
+				this.setBookmarkMenuState(false)
+			},
+
 			/**
 			 * Focus on the menu toggle button.
 			 */
@@ -98,6 +108,19 @@
 
 				if(key === 'Escape')
 					this.closeMenuAndFocusItem()
+			},
+
+			/**
+			 * Toggle the menu.
+			 */
+			toggleMenu()
+			{
+				//Toggle bookmarks menu
+				this.toggleBookmarksMenu()
+
+				//Signal if opening
+				if(this.bookmarkMenuIsOpen)
+					this.$emit('open-menu')
 			}
 		}
 	}

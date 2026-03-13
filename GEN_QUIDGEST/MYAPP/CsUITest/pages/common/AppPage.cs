@@ -8,7 +8,7 @@ public class AppPage: PageObject
 	private By containerLocator => By.ClassName("layout-container");
 	private IWebElement Container => driver.FindElement(containerLocator);
 
-	public IMenuControl Menu => new VerticalMenuControl(driver, _menuTree);
+	public IMenuControl Menu => new HorizontalMenuControl(driver, _menuTree);
 
 	private By loginBtnLocator => By.Id("logon-menu-btn");
 	private IWebElement loginBtn => driver.FindElement(loginBtnLocator);
@@ -103,6 +103,10 @@ public class AppPage: PageObject
 
 		module = "PRJ";
 		res.AddModule(module);
+		res.AddMenu(module, "1", null);
+		res.AddMenu(module, "2", null);
+		res.AddMenu(module, "3", null);
+		res.AddMenu(module, "4", null);
         return res;
     }
 }

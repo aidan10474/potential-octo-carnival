@@ -20,6 +20,21 @@ namespace CSGenio.business
 
             StringBuilder Qresult = new StringBuilder();
             
+			// gender
+            Qresult = new StringBuilder();
+			            Qresult.AppendLine("if {{{0}}} = \"Female\" then \"Female\" else");
+			            Qresult.AppendLine("if {{{0}}} = \"Male\" then \"Male\" else");
+            Qresult.Append("\"                                              \"");
+            todasArrays.Add("gender", Qresult.ToString());
+			// position
+            Qresult = new StringBuilder();
+			            Qresult.AppendLine("if {{{0}}} = \"PG\" then \"Point Guard\" else");
+			            Qresult.AppendLine("if {{{0}}} = \"SG\" then \"Shooting Guard\" else");
+			            Qresult.AppendLine("if {{{0}}} = \"SF\" then \"Small Forward\" else");
+			            Qresult.AppendLine("if {{{0}}} = \"PF\" then \"Power Forward\" else");
+			            Qresult.AppendLine("if {{{0}}} = \"C\" then \"Center\" else");
+            Qresult.Append("\"                                              \"");
+            todasArrays.Add("position", Qresult.ToString());
 			// s_modpro
             Qresult = new StringBuilder();
 			            Qresult.AppendLine("if {{{0}}} = \"INDIV\" then \"Individual\" else");

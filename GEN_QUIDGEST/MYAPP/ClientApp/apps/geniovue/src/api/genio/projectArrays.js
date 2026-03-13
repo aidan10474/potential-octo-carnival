@@ -108,6 +108,84 @@ export class GroupOption {
 
 /* eslint-enable @typescript-eslint/no-unused-vars */
 /**
+ * The Gender array.
+ */
+export class QArrayGender
+{
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	constructor(fnResources)
+	{
+		this.type = 'C'
+		this.pluralName = 'GENDERS24703'
+		this.singularName = 'GENDER44172'
+
+		this.elements = [
+			new Option({
+				num: 1,
+				key: 'Female',
+				resourceId: 'FEMALE46107',
+				fnResources,
+			}),
+			new Option({
+				num: 2,
+				key: 'Male',
+				resourceId: 'MALE32397',
+				fnResources,
+			}),
+		]
+
+	}
+}
+
+/**
+ * The Position array.
+ */
+export class QArrayPosition
+{
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	constructor(fnResources)
+	{
+		this.type = 'C'
+		this.pluralName = 'POSITIONS36644'
+		this.singularName = 'POSITION54869'
+
+		this.elements = [
+			new Option({
+				num: 1,
+				key: 'PG',
+				resourceId: 'POINT_GUARD16925',
+				fnResources,
+			}),
+			new Option({
+				num: 2,
+				key: 'SG',
+				resourceId: 'SHOOTING_GUARD14552',
+				fnResources,
+			}),
+			new Option({
+				num: 3,
+				key: 'SF',
+				resourceId: 'SMALL_FORWARD09705',
+				fnResources,
+			}),
+			new Option({
+				num: 4,
+				key: 'PF',
+				resourceId: 'POWER_FORWARD00086',
+				fnResources,
+			}),
+			new Option({
+				num: 5,
+				key: 'C',
+				resourceId: 'CENTER62779',
+				fnResources,
+			}),
+		]
+
+	}
+}
+
+/**
  * The s_modpro array.
  */
 export class QArrayS_modpro
@@ -376,6 +454,8 @@ export class QArrayS_tpproc
 
 
 export default {
+	QArrayGender,
+	QArrayPosition,
 	QArrayS_modpro,
 	QArrayS_module,
 	QArrayS_prstat,

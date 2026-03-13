@@ -20,20 +20,28 @@ namespace CSGenio.business
     /// </summary>
     public abstract class Area : IArea
     {
+        public static AreaRef AreaSKILL_PLAYER { get { return m_AreaSKILL_PLAYER; } }
+        private static AreaRef m_AreaSKILL_PLAYER = new AreaRef("PRJ", "prjskill_player", "skill_player");
         public static AreaRef AreaS_UA { get { return m_AreaS_UA; } }
         private static AreaRef m_AreaS_UA = new AreaRef("PRJ", "userauthorization", "s_ua");
-        public static AreaRef AreaCONTACT { get { return m_AreaCONTACT; } }
-        private static AreaRef m_AreaCONTACT = new AreaRef("PRJ", "prjcontact", "contact");
         public static AreaRef AreaS_NM { get { return m_AreaS_NM; } }
         private static AreaRef m_AreaS_NM = new AreaRef("PRJ", "notificationmessage", "s_nm");
         public static AreaRef AreaPLAYER { get { return m_AreaPLAYER; } }
         private static AreaRef m_AreaPLAYER = new AreaRef("PRJ", "prjplayer", "player");
+        public static AreaRef AreaSKILL { get { return m_AreaSKILL; } }
+        private static AreaRef m_AreaSKILL = new AreaRef("PRJ", "prjskill", "skill");
+        public static AreaRef AreaPLAYER_TEAM { get { return m_AreaPLAYER_TEAM; } }
+        private static AreaRef m_AreaPLAYER_TEAM = new AreaRef("PRJ", "prjplayer_team", "player_team");
         public static AreaRef AreaMEM { get { return m_AreaMEM; } }
         private static AreaRef m_AreaMEM = new AreaRef("PRJ", "prjmem", "mem");
         public static AreaRef AreaPSW { get { return m_AreaPSW; } }
         private static AreaRef m_AreaPSW = new AreaRef("PRJ", "userlogin", "psw");
         public static AreaRef AreaS_PAX { get { return m_AreaS_PAX; } }
         private static AreaRef m_AreaS_PAX = new AreaRef("PRJ", "asyncprocessattachments", "s_pax");
+        public static AreaRef AreaSTATS { get { return m_AreaSTATS; } }
+        private static AreaRef m_AreaSTATS = new AreaRef("PRJ", "prjstats", "stats");
+        public static AreaRef AreaTEAM { get { return m_AreaTEAM; } }
+        private static AreaRef m_AreaTEAM = new AreaRef("PRJ", "prjteam", "team");
         public static AreaRef AreaS_ARG { get { return m_AreaS_ARG; } }
         private static AreaRef m_AreaS_ARG = new AreaRef("PRJ", "asyncprocessargument", "s_arg");
         public static AreaRef AreaS_APR { get { return m_AreaS_APR; } }
@@ -71,13 +79,17 @@ namespace CSGenio.business
         /// </summary>
         public static readonly System.Collections.ObjectModel.ReadOnlyCollection<string> ListaAreas = new System.Collections.ObjectModel.ReadOnlyCollection<string>(
             new List<string>() {
+            "skill_player",
             "s_ua",
-            "contact",
             "s_nm",
             "player",
+            "skill",
+            "player_team",
             "mem",
             "psw",
             "s_pax",
+            "stats",
+            "team",
             "s_arg",
             "s_apr",
             "s_nes",

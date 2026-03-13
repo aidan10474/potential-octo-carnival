@@ -32,6 +32,35 @@ namespace GenioMVC.Models
 		[ShouldSerialize("Player.ValName")]
 		public string ValName { get { return klass.ValName; } set { klass.ValName = value; } }
 
+		[DisplayName("Birthdate")]
+		/// <summary>Field : "Birthdate" Tipo: "D" Formula:  ""</summary>
+		[ShouldSerialize("Player.ValBirthdate")]
+		[DataType(DataType.Date)]
+		[DateAttribute("D")]
+		public DateTime? ValBirthdate { get { return klass.ValBirthdate; } set { klass.ValBirthdate = value ?? DateTime.MinValue; } }
+
+		[DisplayName("Gender")]
+		/// <summary>Field : "Gender" Tipo: "AC" Formula:  ""</summary>
+		[ShouldSerialize("Player.ValGender")]
+		[DataArray("Gender", GenioMVC.Helpers.ArrayType.Character)]
+		public string ValGender { get { return klass.ValGender; } set { klass.ValGender = value; } }
+		[JsonIgnore]
+		public SelectList ArrayValgender { get { return new SelectList(CSGenio.business.ArrayGender.GetDictionary(), "Key", "Value", ValGender); } set { ValGender = value.SelectedValue as string; } }
+
+		[DisplayName("Height")]
+		/// <summary>Field : "Height" Tipo: "N" Formula:  ""</summary>
+		[ShouldSerialize("Player.ValHeight_cm")]
+		[NumericAttribute(0)]
+		public decimal? ValHeight_cm { get { return Convert.ToDecimal(GenFunctions.RoundQG(klass.ValHeight_cm, 0)); } set { klass.ValHeight_cm = Convert.ToDecimal(value); } }
+
+		[DisplayName("Position")]
+		/// <summary>Field : "Position" Tipo: "AC" Formula:  ""</summary>
+		[ShouldSerialize("Player.ValPosition")]
+		[DataArray("Position", GenioMVC.Helpers.ArrayType.Character)]
+		public string ValPosition { get { return klass.ValPosition; } set { klass.ValPosition = value; } }
+		[JsonIgnore]
+		public SelectList ArrayValposition { get { return new SelectList(CSGenio.business.ArrayPosition.GetDictionary(), "Key", "Value", ValPosition); } set { ValPosition = value.SelectedValue as string; } }
+
 		[DisplayName("ZZSTATE")]
 		[ShouldSerialize("Player.ValZzstate")]
 		/// <summary>Field: "ZZSTATE", Type: "INT", Formula: ""</summary>
