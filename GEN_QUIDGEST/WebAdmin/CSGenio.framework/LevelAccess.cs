@@ -11,7 +11,8 @@ namespace CSGenio.framework
         public readonly static LevelAccess DESAUTORIZADO = new LevelAccess(0);		    // Desautorizado
         public readonly static LevelAccess NV0 = new LevelAccess(0); //Desautorizado
         public readonly static LevelAccess NV1 = new LevelAccess(1); //Consulta
-        public readonly static LevelAccess NV99 = new LevelAccess(99); //Administrador
+        public readonly static LevelAccess NV12 = new LevelAccess(12); //User
+        public readonly static LevelAccess NV99 = new LevelAccess(99); //Administrator
 
         private readonly int levelValue;	// identifier do level de acesso
         private readonly string id;

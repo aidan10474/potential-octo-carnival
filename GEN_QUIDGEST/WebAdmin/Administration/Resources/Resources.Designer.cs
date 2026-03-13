@@ -142,6 +142,15 @@ namespace Administration.Resources {
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to "Administrator"
+        /// </summary>
+        public static string ADMINISTRATOR27313 {
+            get {
+                return ResourceManager.GetString("ADMINISTRATOR27313", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to "Teams"
         /// </summary>
         public static string TEAMS47429 {
@@ -489,6 +498,15 @@ namespace Administration.Resources {
         public static string ESTADOS_DO_PROCESSO59118 {
             get {
                 return ResourceManager.GetString("ESTADOS_DO_PROCESSO59118", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to "User"
+        /// </summary>
+        public static string USER57012 {
+            get {
+                return ResourceManager.GetString("USER57012", resourceCulture);
             }
         }
 

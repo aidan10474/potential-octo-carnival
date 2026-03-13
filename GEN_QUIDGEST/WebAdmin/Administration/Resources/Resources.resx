@@ -144,6 +144,9 @@
   <data name="STATS33120" xml:space="preserve">
     <value>Stats</value>
   </data>
+  <data name="ADMINISTRATOR27313" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
   <data name="TEAMS47429" xml:space="preserve">
     <value>Teams</value>
   </data>
@@ -260,6 +263,9 @@
   </data>
   <data name="ESTADOS_DO_PROCESSO59118" xml:space="preserve">
     <value>Estados do processo</value>
+  </data>
+  <data name="USER57012" xml:space="preserve">
+    <value>User</value>
   </data>
   <data name="HORARIO56549" xml:space="preserve">
     <value>Horário</value>

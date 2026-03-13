@@ -27,6 +27,9 @@
   <msg id="Stats" code="STATS33120">
     <ENUS>Stats</ENUS>
   </msg>
+  <msg id="Administrator" code="ADMINISTRATOR27313">
+    <ENUS>Administrator</ENUS>
+  </msg>
   <msg id="Teams" code="TEAMS47429">
     <ENUS>Teams</ENUS>
   </msg>
@@ -143,6 +146,9 @@
   </msg>
   <msg id="Estados do processo" code="ESTADOS_DO_PROCESSO59118">
     <ENUS>Estados do processo</ENUS>
+  </msg>
+  <msg id="User" code="USER57012">
+    <ENUS>User</ENUS>
   </msg>
   <msg id="Horário" code="HORARIO56549">
     <ENUS>Horário</ENUS>
