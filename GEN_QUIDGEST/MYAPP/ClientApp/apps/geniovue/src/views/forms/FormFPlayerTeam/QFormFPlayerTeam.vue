@@ -96,7 +96,7 @@
 			data-key="F_PLAYER_TEAM"
 			:data-loading="!formInitialDataLoaded || !isActiveForm">
 			<template v-if="formControl.initialized && showFormBody">
-				<q-row v-if="controls.F_PLAYER_TEAM__PLAYER__NAME.isVisible || controls.F_PLAYER_TEAM__PLAYER_TEAM__DATE_STARTED.isVisible || controls.F_PLAYER_TEAM__PLAYER_TEAM__DATE_ENDED.isVisible">
+				<q-row v-if="controls.F_PLAYER_TEAM__PLAYER__NAME.isVisible">
 					<q-col
 						v-if="controls.F_PLAYER_TEAM__PLAYER__NAME.isVisible"
 						cols="auto">
@@ -118,6 +118,8 @@
 								v-on="controls.F_PLAYER_TEAM__PLAYER__NAME.handlers" />
 						</base-input-structure>
 					</q-col>
+				</q-row>
+				<q-row v-if="controls.F_PLAYER_TEAM__PLAYER_TEAM__DATE_STARTED.isVisible">
 					<q-col
 						v-if="controls.F_PLAYER_TEAM__PLAYER_TEAM__DATE_STARTED.isVisible"
 						cols="auto">
@@ -137,6 +139,8 @@
 								@update:model-value="model.ValDate_started.fnUpdateValue($event ?? '')" />
 						</base-input-structure>
 					</q-col>
+				</q-row>
+				<q-row v-if="controls.F_PLAYER_TEAM__PLAYER_TEAM__DATE_ENDED.isVisible">
 					<q-col
 						v-if="controls.F_PLAYER_TEAM__PLAYER_TEAM__DATE_ENDED.isVisible"
 						cols="auto">
