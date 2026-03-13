@@ -15,6 +15,9 @@
   <msg id="Duration" code="DURATION40426">
     <ENUS>Duration</ENUS>
   </msg>
+  <msg id="9" code="_936792">
+    <ENUS>9</ENUS>
+  </msg>
   <msg id="Em execução" code="EM_EXECUCAO53706">
     <ENUS>Em execução</ENUS>
   </msg>
@@ -29,6 +32,9 @@
   </msg>
   <msg id="Administrator" code="ADMINISTRATOR27313">
     <ENUS>Administrator</ENUS>
+  </msg>
+  <msg id="1" code="_137648">
+    <ENUS>1</ENUS>
   </msg>
   <msg id="Teams" code="TEAMS47429">
     <ENUS>Teams</ENUS>
@@ -132,6 +138,12 @@
   <msg id="Players" code="PLAYERS11892">
     <ENUS>Players</ENUS>
   </msg>
+  <msg id="2" code="_240153">
+    <ENUS>2</ENUS>
+  </msg>
+  <msg id="Player teams" code="PLAYER_TEAMS24459">
+    <ENUS>Player teams</ENUS>
+  </msg>
   <msg id="Consulta" code="CONSULTA40695">
     <ENUS>Consulta</ENUS>
   </msg>
@@ -188,6 +200,9 @@
   </msg>
   <msg id="Skill_Player" code="SKILL_PLAYER00402">
     <ENUS>Skill_Player</ENUS>
+  </msg>
+  <msg id="3" code="_340014">
+    <ENUS>3</ENUS>
   </msg>
   <msg id="Sends email?" code="SENDS_EMAIL_12942">
     <ENUS>Sends email?</ENUS>
@@ -360,11 +375,20 @@
   <msg id="Process Types" code="PROCESS_TYPES19050">
     <ENUS>Process Types</ENUS>
   </msg>
+  <msg id="Player skills" code="PLAYER_SKILLS12567">
+    <ENUS>Player skills</ENUS>
+  </msg>
+  <msg id="5" code="_537084">
+    <ENUS>5</ENUS>
+  </msg>
   <msg id="Sends attachment?" code="SENDS_ATTACHMENT_64661">
     <ENUS>Sends attachment?</ENUS>
   </msg>
   <msg id="Process type" code="PROCESS_TYPE25967">
     <ENUS>Process type</ENUS>
+  </msg>
+  <msg id="8" code="_834891">
+    <ENUS>8</ENUS>
   </msg>
   <msg id="Login attempts" code="LOGIN_ATTEMPTS62337">
     <ENUS>Login attempts</ENUS>
@@ -374,6 +398,9 @@
   </msg>
   <msg id="Center" code="CENTER62779">
     <ENUS>Center</ENUS>
+  </msg>
+  <msg id="7" code="_737370">
+    <ENUS>7</ENUS>
   </msg>
   <msg id="To" code="TO55217">
     <ENUS>To</ENUS>
@@ -411,8 +438,17 @@
   <msg id="Routine" code="ROUTINE58306">
     <ENUS>Routine</ENUS>
   </msg>
+  <msg id="6" code="_638533">
+    <ENUS>6</ENUS>
+  </msg>
   <msg id="date_started" code="DATE_STARTED24788">
     <ENUS>date_started</ENUS>
+  </msg>
+  <msg id="Player team" code="PLAYER_TEAM08295">
+    <ENUS>Player team</ENUS>
+  </msg>
+  <msg id="10" code="_1012719">
+    <ENUS>10</ENUS>
   </msg>
   <msg id="Unidade orgânica" code="UNIDADE_ORGANICA38383">
     <ENUS>Unidade orgânica</ENUS>
@@ -440,6 +476,9 @@
   </msg>
   <msg id="Changed on" code="CHANGED_ON19727">
     <ENUS>Changed on</ENUS>
+  </msg>
+  <msg id="4" code="_437743">
+    <ENUS>4</ENUS>
   </msg>
   <msg id="End time" code="END_TIME53495">
     <ENUS>End time</ENUS>

@@ -511,7 +511,7 @@
 						controlLimits: [
 						],
 					}, this),
-					F_SKILL_PLAYER__SKILL_PLAYER__RATING: new fieldControlClass.NumberControl({
+					F_SKILL_PLAYER__SKILL_PLAYER__RATING: new fieldControlClass.ArrayNumberControl({
 						modelField: 'ValRating',
 						valueChangeEvent: 'fieldChange:skill_player.rating',
 						id: 'F_SKILL_PLAYER__SKILL_PLAYER__RATING',
@@ -522,6 +522,10 @@
 						labelPosition: computed(() => this.labelAlignment.topleft),
 						maxIntegers: 10,
 						maxDecimals: 0,
+						mustBeFilled: true,
+						arrayName: 'Rating',
+						helpShortItem: 'None',
+						helpDetailedItem: 'None',
 						controlLimits: [
 						],
 					}, this),

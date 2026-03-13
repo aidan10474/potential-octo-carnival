@@ -14,7 +14,7 @@ using System.Linq;
 namespace CSGenio.business
 {
 	/// <summary>
-	/// Skill_Player
+	/// Player skills
 	/// </summary>
 	public class CSGenioAskill_player : DbArea
 	{
@@ -74,14 +74,16 @@ namespace CSGenio.business
 			info.RegisterFieldDB(Qfield);
 
 			//- - - - - - - - - - - - - - - - - - -
-			Qfield = new Field(info.Alias, "rating", FieldType.NUMERIC);
+			Qfield = new Field(info.Alias, "rating", FieldType.ARRAY_NUMERIC);
 			Qfield.FieldDescription = "Rating";
 			Qfield.FieldSize =  10;
 			Qfield.MQueue = false;
-			Qfield.IntegerDigits = 10;
 			Qfield.CavDesignation = "RATING45804";
 
+            Qfield.NotNull = true;
 			Qfield.Dupmsg = "";
+			Qfield.ArrayName = "dbo.GetValArrayNrating";
+            Qfield.ArrayClassName = "Rating";
 			info.RegisterFieldDB(Qfield);
 
 			//- - - - - - - - - - - - - - - - - - -
@@ -158,9 +160,9 @@ namespace CSGenio.business
 			info.Alias="skill_player";
 			info.IsDomain = true;
 			info.PersistenceType = PersistenceType.Database;
-			info.AreaDesignation="Skill_Player";
-			info.AreaPluralDesignation="Skill_Players";
-			info.DescriptionCav="SKILL_PLAYER00402";
+			info.AreaDesignation="Player skills";
+			info.AreaPluralDesignation="Player skills";
+			info.DescriptionCav="PLAYER_SKILLS12567";
 
 			//sincronização
 			info.SyncIncrementalDateStart = TimeSpan.FromHours(8);
@@ -268,11 +270,11 @@ namespace CSGenio.business
 			set { insertNameValueField(FldSkill_fk, value); }
 		}
 
-		/// <summary>Field : "Rating" Tipo: "N" Formula:  ""</summary>
+		/// <summary>Field : "Rating" Tipo: "AN" Formula:  ""</summary>
 		public static FieldRef FldRating { get { return m_fldRating; } }
 		private static FieldRef m_fldRating = new FieldRef("skill_player", "rating");
 
-		/// <summary>Field : "Rating" Tipo: "N" Formula:  ""</summary>
+		/// <summary>Field : "Rating" Tipo: "AN" Formula:  ""</summary>
 		public decimal ValRating
 		{
 			get { return (decimal)returnValueField(FldRating); }

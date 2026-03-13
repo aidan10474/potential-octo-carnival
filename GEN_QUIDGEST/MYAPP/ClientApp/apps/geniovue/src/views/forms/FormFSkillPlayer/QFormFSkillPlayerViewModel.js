@@ -96,6 +96,7 @@ export default class ViewModel extends FormViewModelBase
 			field: 'RATING',
 			maxDigits: 10,
 			decimalDigits: 0,
+			arrayOptions: computed(() => new qProjArrays.QArrayRating(vm.$getResource).elements),
 			description: computed(() => this.Resources.RATING45804),
 		}).cloneFrom(values?.ValRating))
 		this.stopWatchers.push(watch(() => this.ValRating.value, (newValue, oldValue) => this.onUpdate('skill_player.rating', this.ValRating, newValue, oldValue)))

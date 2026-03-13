@@ -35,6 +35,20 @@ namespace CSGenio.business
 			            Qresult.AppendLine("if {{{0}}} = \"C\" then \"Center\" else");
             Qresult.Append("\"                                              \"");
             todasArrays.Add("position", Qresult.ToString());
+			// rating
+            Qresult = new StringBuilder();
+			Qresult.AppendLine("if {{{0}}} = 1 then \"1\" else");
+			Qresult.AppendLine("if {{{0}}} = 2 then \"2\" else");
+			Qresult.AppendLine("if {{{0}}} = 3 then \"3\" else");
+			Qresult.AppendLine("if {{{0}}} = 4 then \"4\" else");
+			Qresult.AppendLine("if {{{0}}} = 5 then \"5\" else");
+			Qresult.AppendLine("if {{{0}}} = 6 then \"6\" else");
+			Qresult.AppendLine("if {{{0}}} = 7 then \"7\" else");
+			Qresult.AppendLine("if {{{0}}} = 8 then \"8\" else");
+			Qresult.AppendLine("if {{{0}}} = 9 then \"9\" else");
+			Qresult.AppendLine("if {{{0}}} = 10 then \"10\" else");
+            Qresult.Append("\"                                              \"");
+            todasArrays.Add("rating", Qresult.ToString());
 			// s_modpro
             Qresult = new StringBuilder();
 			            Qresult.AppendLine("if {{{0}}} = \"INDIV\" then \"Individual\" else");

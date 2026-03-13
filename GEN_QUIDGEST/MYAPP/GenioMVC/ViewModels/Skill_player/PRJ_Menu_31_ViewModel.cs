@@ -145,7 +145,7 @@ namespace GenioMVC.ViewModels.Skill_player
 		{
 			return
 			[
-				new Exports.QColumn(CSGenioAskill_player.FldRating, FieldType.NUMERIC, Resources.Resources.RATING45804, 10, 0, true),
+				new Exports.QColumn(CSGenioAskill_player.FldRating, FieldType.ARRAY_NUMERIC, Resources.Resources.RATING45804, 10, 0, true, "Rating"),
 				new Exports.QColumn(CSGenioAplayer.FldName, FieldType.TEXT, Resources.Resources.NAME31974, 30, 0, true),
 			];
 		}
@@ -526,7 +526,7 @@ namespace GenioMVC.ViewModels.Skill_player
 
 		private static readonly List<TableSearchColumn> _searchableColumns =
 		[
-			new TableSearchColumn("ValRating", CSGenioAskill_player.FldRating, typeof(decimal?)),
+			new TableSearchColumn("ValRating", CSGenioAskill_player.FldRating, typeof(decimal), array : "Rating"),
 			new TableSearchColumn("Player_ValName", CSGenioAplayer.FldName, typeof(string)),
 		];
 	}

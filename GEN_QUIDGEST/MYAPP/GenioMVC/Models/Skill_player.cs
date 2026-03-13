@@ -68,10 +68,12 @@ namespace GenioMVC.Models
 		}
 
 		[DisplayName("Rating")]
-		/// <summary>Field : "Rating" Tipo: "N" Formula:  ""</summary>
+		/// <summary>Field : "Rating" Tipo: "AN" Formula:  ""</summary>
 		[ShouldSerialize("Skill_player.ValRating")]
-		[NumericAttribute(0)]
-		public decimal? ValRating { get { return Convert.ToDecimal(GenFunctions.RoundQG(klass.ValRating, 0)); } set { klass.ValRating = Convert.ToDecimal(value); } }
+		[DataArray("Rating", GenioMVC.Helpers.ArrayType.Numeric)]
+		public decimal ValRating { get { return klass.ValRating; } set { klass.ValRating = value; } }
+		[JsonIgnore]
+		public SelectList ArrayValrating { get { return new SelectList(CSGenio.business.ArrayRating.GetDictionary(), "Key", "Value", ValRating); } set { ValRating = Convert.ToDecimal(value.SelectedValue); } }
 
 		[DisplayName("ZZSTATE")]
 		[ShouldSerialize("Skill_player.ValZzstate")]

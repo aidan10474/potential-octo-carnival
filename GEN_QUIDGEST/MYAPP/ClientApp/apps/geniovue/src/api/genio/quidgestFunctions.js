@@ -1184,7 +1184,7 @@ const MYAPP_THEME_VARIABLES = {
 	'$action-focus-color': "#201060",
 	'$input-focus-color': "rgba(0, 169, 206, 0.35)",
 	'$button-focus-color': "rgba(238, 96, 2, 0.5)",
-	'$body-bg': "$white",
+	'$body-bg': "#FFFFFF",
 	'$body-color': "#202428",
 	'$input-btn-padding-y': "0.26rem",
 	'$input-btn-padding-x': "0.25rem",

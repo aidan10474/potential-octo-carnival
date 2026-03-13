@@ -47,9 +47,9 @@ namespace GenioMVC.ViewModels.Skill_player
 		[ValidateSetAccess]
 		public TableDBEdit<GenioMVC.Models.Player> TablePlayerName { get; set; }
 		/// <summary>
-		/// Title: "Rating" | Type: "N"
+		/// Title: "Rating" | Type: "AN"
 		/// </summary>
-		public decimal? ValRating { get; set; }
+		public decimal ValRating { get; set; }
 
 		#region Navigations
 		#endregion
@@ -378,6 +378,8 @@ namespace GenioMVC.ViewModels.Skill_player
 		{
 			CrudViewModelFieldValidator validator = new(m_userContext.User.Language);
 
+
+			validator.Required("ValRating", Resources.Resources.RATING45804, ViewModelConversion.ToNumeric(ValRating), FieldType.ARRAY_NUMERIC.GetFormatting());
 
 
 			return validator.GetResult();

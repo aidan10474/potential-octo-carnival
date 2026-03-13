@@ -96,95 +96,115 @@
 			data-key="F_PLAYER_STATS"
 			:data-loading="!formInitialDataLoaded || !isActiveForm">
 			<template v-if="formControl.initialized && showFormBody">
-				<q-row v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible || controls.F_PLAYER_STATS__STATS__POINTS.isVisible || controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible || controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible || controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible">
-					<q-col
-						v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER_STATS__PLAYER__NAME"
-							v-on="controls.F_PLAYER_STATS__PLAYER__NAME.handlers"
-							:loading="controls.F_PLAYER_STATS__PLAYER__NAME.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-lookup
-								v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible"
-								v-bind="controls.F_PLAYER_STATS__PLAYER__NAME.props"
-								v-on="controls.F_PLAYER_STATS__PLAYER__NAME.handlers" />
-							<q-see-more-f-player-stats-player-name
-								v-if="controls.F_PLAYER_STATS__PLAYER__NAME.seeMoreIsVisible"
-								v-bind="controls.F_PLAYER_STATS__PLAYER__NAME.seeMoreParams"
-								v-on="controls.F_PLAYER_STATS__PLAYER__NAME.handlers" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER_STATS__STATS__POINTS.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER_STATS__STATS__POINTS.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER_STATS__STATS__POINTS"
-							v-on="controls.F_PLAYER_STATS__STATS__POINTS.handlers"
-							:loading="controls.F_PLAYER_STATS__STATS__POINTS.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-numeric-input
-								v-if="controls.F_PLAYER_STATS__STATS__POINTS.isVisible"
-								v-bind="controls.F_PLAYER_STATS__STATS__POINTS.props"
-								@update:model-value="model.ValPoints.fnUpdateValue" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER_STATS__STATS__ASSISTS"
-							v-on="controls.F_PLAYER_STATS__STATS__ASSISTS.handlers"
-							:loading="controls.F_PLAYER_STATS__STATS__ASSISTS.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-numeric-input
-								v-if="controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible"
-								v-bind="controls.F_PLAYER_STATS__STATS__ASSISTS.props"
-								@update:model-value="model.ValAssists.fnUpdateValue" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER_STATS__STATS__REBOUNDS"
-							v-on="controls.F_PLAYER_STATS__STATS__REBOUNDS.handlers"
-							:loading="controls.F_PLAYER_STATS__STATS__REBOUNDS.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-numeric-input
-								v-if="controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible"
-								v-bind="controls.F_PLAYER_STATS__STATS__REBOUNDS.props"
-								@update:model-value="model.ValRebounds.fnUpdateValue" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED"
-							v-on="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.handlers"
-							:loading="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-numeric-input
-								v-if="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible"
-								v-bind="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.props"
-								@update:model-value="model.ValGames_played.fnUpdateValue" />
-						</base-input-structure>
+				<q-row v-if="controls.F_PLAYER_STATS__PSEUD__NEWGRP01.isVisible">
+					<q-col v-if="controls.F_PLAYER_STATS__PSEUD__NEWGRP01.isVisible">
+						<q-group-box-container
+							v-if="controls.F_PLAYER_STATS__PSEUD__NEWGRP01.isVisible"
+							id="F_PLAYER_STATS__PSEUD__NEWGRP01"
+							v-bind="controls.F_PLAYER_STATS__PSEUD__NEWGRP01"
+							:is-visible="controls.F_PLAYER_STATS__PSEUD__NEWGRP01.isVisible">
+							<!-- Start F_PLAYER_STATS__PSEUD__NEWGRP01 -->
+							<q-row v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER_STATS__PLAYER__NAME"
+										v-on="controls.F_PLAYER_STATS__PLAYER__NAME.handlers"
+										:loading="controls.F_PLAYER_STATS__PLAYER__NAME.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-lookup
+											v-if="controls.F_PLAYER_STATS__PLAYER__NAME.isVisible"
+											v-bind="controls.F_PLAYER_STATS__PLAYER__NAME.props"
+											v-on="controls.F_PLAYER_STATS__PLAYER__NAME.handlers" />
+										<q-see-more-f-player-stats-player-name
+											v-if="controls.F_PLAYER_STATS__PLAYER__NAME.seeMoreIsVisible"
+											v-bind="controls.F_PLAYER_STATS__PLAYER__NAME.seeMoreParams"
+											v-on="controls.F_PLAYER_STATS__PLAYER__NAME.handlers" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER_STATS__STATS__POINTS.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER_STATS__STATS__POINTS.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER_STATS__STATS__POINTS.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER_STATS__STATS__POINTS"
+										v-on="controls.F_PLAYER_STATS__STATS__POINTS.handlers"
+										:loading="controls.F_PLAYER_STATS__STATS__POINTS.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-numeric-input
+											v-if="controls.F_PLAYER_STATS__STATS__POINTS.isVisible"
+											v-bind="controls.F_PLAYER_STATS__STATS__POINTS.props"
+											@update:model-value="model.ValPoints.fnUpdateValue" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER_STATS__STATS__ASSISTS"
+										v-on="controls.F_PLAYER_STATS__STATS__ASSISTS.handlers"
+										:loading="controls.F_PLAYER_STATS__STATS__ASSISTS.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-numeric-input
+											v-if="controls.F_PLAYER_STATS__STATS__ASSISTS.isVisible"
+											v-bind="controls.F_PLAYER_STATS__STATS__ASSISTS.props"
+											@update:model-value="model.ValAssists.fnUpdateValue" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER_STATS__STATS__REBOUNDS"
+										v-on="controls.F_PLAYER_STATS__STATS__REBOUNDS.handlers"
+										:loading="controls.F_PLAYER_STATS__STATS__REBOUNDS.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-numeric-input
+											v-if="controls.F_PLAYER_STATS__STATS__REBOUNDS.isVisible"
+											v-bind="controls.F_PLAYER_STATS__STATS__REBOUNDS.props"
+											@update:model-value="model.ValRebounds.fnUpdateValue" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED"
+										v-on="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.handlers"
+										:loading="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-numeric-input
+											v-if="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.isVisible"
+											v-bind="controls.F_PLAYER_STATS__STATS__GAMES_PLAYED.props"
+											@update:model-value="model.ValGames_played.fnUpdateValue" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<!-- End F_PLAYER_STATS__PSEUD__NEWGRP01 -->
+						</q-group-box-container>
 					</q-col>
 				</q-row>
 			</template>
@@ -534,6 +554,19 @@
 				},
 
 				controls: {
+					F_PLAYER_STATS__PSEUD__NEWGRP01: new fieldControlClass.GroupControl({
+						id: 'F_PLAYER_STATS__PSEUD__NEWGRP01',
+						name: 'NEWGRP01',
+						size: 'block',
+						label: '',
+						placeholder: '',
+						labelPosition: computed(() => this.labelAlignment.topleft),
+						isCollapsible: false,
+						anchored: false,
+						directChildren: ['F_PLAYER_STATS__PLAYER__NAME', 'F_PLAYER_STATS__STATS__POINTS', 'F_PLAYER_STATS__STATS__ASSISTS', 'F_PLAYER_STATS__STATS__REBOUNDS', 'F_PLAYER_STATS__STATS__GAMES_PLAYED'],
+						controlLimits: [
+						],
+					}, this),
 					F_PLAYER_STATS__PLAYER__NAME: new fieldControlClass.LookupControl({
 						modelField: 'TablePlayerName',
 						valueChangeEvent: 'fieldChange:player.name',
@@ -543,6 +576,7 @@
 						label: computed(() => this.Resources.NAME31974),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYER_STATS__PSEUD__NEWGRP01',
 						externalCallbacks: {
 							getModelField: vm.getModelField,
 							getModelFieldValue: vm.getModelFieldValue,
@@ -571,6 +605,7 @@
 						label: computed(() => this.Resources.POINTS56147),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYER_STATS__PSEUD__NEWGRP01',
 						maxIntegers: 10,
 						maxDecimals: 0,
 						controlLimits: [
@@ -585,6 +620,7 @@
 						label: computed(() => this.Resources.ASSISTS50987),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYER_STATS__PSEUD__NEWGRP01',
 						maxIntegers: 10,
 						maxDecimals: 0,
 						controlLimits: [
@@ -599,6 +635,7 @@
 						label: computed(() => this.Resources.REBOUNDS32845),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYER_STATS__PSEUD__NEWGRP01',
 						maxIntegers: 10,
 						maxDecimals: 0,
 						controlLimits: [
@@ -613,6 +650,7 @@
 						label: computed(() => this.Resources.GAMES_PLAYED27662),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYER_STATS__PSEUD__NEWGRP01',
 						maxIntegers: 10,
 						maxDecimals: 0,
 						controlLimits: [
@@ -628,6 +666,7 @@
 				}),
 
 				groupFields: readonly([
+					'F_PLAYER_STATS__PSEUD__NEWGRP01',
 				]),
 
 				tableFields: readonly([

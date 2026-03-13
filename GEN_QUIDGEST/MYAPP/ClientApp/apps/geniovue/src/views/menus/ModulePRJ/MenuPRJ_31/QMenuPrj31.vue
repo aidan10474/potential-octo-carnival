@@ -146,7 +146,7 @@
 							'page-full-height'
 						],
 						columnsOriginal: [
-							new listColumnTypes.NumericColumn({
+							new listColumnTypes.ArrayColumn({
 								order: 1,
 								name: 'ValRating',
 								area: 'SKILL_PLAYER',
@@ -156,6 +156,8 @@
 								maxDigits: 10,
 								decimalPlaces: 0,
 								export: 1,
+								array: computed(() => new qProjArrays.QArrayRating(vm.$getResource).elements),
+								arrayType: qProjArrays.QArrayRating.type,
 							}, computed(() => vm.model), computed(() => vm.internalEvents)),
 							new listColumnTypes.TextColumn({
 								order: 2,
@@ -174,7 +176,7 @@
 							serverMode: true,
 							pkColumn: 'ValCodskill_player',
 							tableAlias: 'SKILL_PLAYER',
-							tableNamePlural: computed(() => this.Resources.SKILL_PLAYERS53105),
+							tableNamePlural: computed(() => this.Resources.PLAYER_SKILLS12567),
 							viewManagement: '',
 							showLimitsInfo: true,
 							tableTitle: computed(() => this.Resources.SKILL_PLAYERS53105),

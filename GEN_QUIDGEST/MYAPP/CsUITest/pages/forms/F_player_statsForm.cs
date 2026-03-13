@@ -8,6 +8,11 @@ namespace quidgest.uitests.pages.forms;
 public class F_player_statsForm : Form
 {
 	/// <summary>
+	/// 
+	/// </summary>
+	public CollapsibleZoneControl PseudNewgrp01 => new CollapsibleZoneControl(driver, ContainerLocator, "#F_PLAYER_STATS__PSEUD__NEWGRP01-container");
+
+	/// <summary>
 	/// Name
 	/// </summary>
 	public LookupControl PlayerName => new LookupControl(driver, ContainerLocator, "container-F_PLAYER_STATS__PLAYER__NAME");

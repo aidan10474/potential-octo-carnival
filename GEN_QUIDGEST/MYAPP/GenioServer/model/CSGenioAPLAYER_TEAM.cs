@@ -14,7 +14,7 @@ using System.Linq;
 namespace CSGenio.business
 {
 	/// <summary>
-	/// Player_team
+	/// Player team
 	/// </summary>
 	public class CSGenioAplayer_team : DbArea
 	{
@@ -167,9 +167,9 @@ namespace CSGenio.business
 			info.Alias="player_team";
 			info.IsDomain = true;
 			info.PersistenceType = PersistenceType.Database;
-			info.AreaDesignation="Player_team";
-			info.AreaPluralDesignation="Player_teams";
-			info.DescriptionCav="PLAYER_TEAM42526";
+			info.AreaDesignation="Player team";
+			info.AreaPluralDesignation="Player teams";
+			info.DescriptionCav="PLAYER_TEAM08295";
 
 			//sincronização
 			info.SyncIncrementalDateStart = TimeSpan.FromHours(8);

@@ -183,7 +183,7 @@
 							serverMode: true,
 							pkColumn: 'ValCodplayer_team',
 							tableAlias: 'PLAYER_TEAM',
-							tableNamePlural: computed(() => this.Resources.PLAYER_TEAMS36968),
+							tableNamePlural: computed(() => this.Resources.PLAYER_TEAMS24459),
 							viewManagement: '',
 							showLimitsInfo: true,
 							tableTitle: computed(() => this.Resources.PLAYER_TEAMS36968),

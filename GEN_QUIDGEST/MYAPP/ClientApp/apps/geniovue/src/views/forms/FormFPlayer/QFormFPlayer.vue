@@ -96,93 +96,113 @@
 			data-key="F_PLAYER"
 			:data-loading="!formInitialDataLoaded || !isActiveForm">
 			<template v-if="formControl.initialized && showFormBody">
-				<q-row v-if="controls.F_PLAYER__PLAYER__NAME.isVisible || controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible || controls.F_PLAYER__PLAYER__GENDER.isVisible || controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible || controls.F_PLAYER__PLAYER__POSITION.isVisible">
-					<q-col
-						v-if="controls.F_PLAYER__PLAYER__NAME.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER__PLAYER__NAME.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER__PLAYER__NAME"
-							v-on="controls.F_PLAYER__PLAYER__NAME.handlers"
-							:loading="controls.F_PLAYER__PLAYER__NAME.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-text-field
-								v-bind="controls.F_PLAYER__PLAYER__NAME.props"
-								@blur="onBlur(controls.F_PLAYER__PLAYER__NAME, model.ValName.value)"
-								@change="model.ValName.fnUpdateValueOnChange" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER__PLAYER__BIRTHDATE"
-							v-on="controls.F_PLAYER__PLAYER__BIRTHDATE.handlers"
-							:loading="controls.F_PLAYER__PLAYER__BIRTHDATE.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-date-time-picker
-								v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
-								v-bind="controls.F_PLAYER__PLAYER__BIRTHDATE.props"
-								:model-value="model.ValBirthdate.value"
-								@reset-icon-click="model.ValBirthdate.fnUpdateValue(model.ValBirthdate.originalValue ?? new Date())"
-								@update:model-value="model.ValBirthdate.fnUpdateValue($event ?? '')" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER__PLAYER__GENDER"
-							v-on="controls.F_PLAYER__PLAYER__GENDER.handlers"
-							:loading="controls.F_PLAYER__PLAYER__GENDER.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-select
-								v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
-								v-bind="controls.F_PLAYER__PLAYER__GENDER.props"
-								@update:model-value="model.ValGender.fnUpdateValue" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER__PLAYER__HEIGHT_CM"
-							v-on="controls.F_PLAYER__PLAYER__HEIGHT_CM.handlers"
-							:loading="controls.F_PLAYER__PLAYER__HEIGHT_CM.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-numeric-input
-								v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
-								v-bind="controls.F_PLAYER__PLAYER__HEIGHT_CM.props"
-								@update:model-value="model.ValHeight_cm.fnUpdateValue" />
-						</base-input-structure>
-					</q-col>
-					<q-col
-						v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
-						cols="auto">
-						<base-input-structure
-							v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
-							class="i-text"
-							v-bind="controls.F_PLAYER__PLAYER__POSITION"
-							v-on="controls.F_PLAYER__PLAYER__POSITION.handlers"
-							:loading="controls.F_PLAYER__PLAYER__POSITION.props.loading"
-							:reporting-mode-on="reportingModeCAV"
-							:suggestion-mode-on="suggestionModeOn">
-							<q-select
-								v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
-								v-bind="controls.F_PLAYER__PLAYER__POSITION.props"
-								@update:model-value="model.ValPosition.fnUpdateValue" />
-						</base-input-structure>
+				<q-row v-if="controls.F_PLAYERPSEUDNEWGRP01.isVisible">
+					<q-col v-if="controls.F_PLAYERPSEUDNEWGRP01.isVisible">
+						<q-group-box-container
+							v-if="controls.F_PLAYERPSEUDNEWGRP01.isVisible"
+							id="F_PLAYERPSEUDNEWGRP01"
+							v-bind="controls.F_PLAYERPSEUDNEWGRP01"
+							:is-visible="controls.F_PLAYERPSEUDNEWGRP01.isVisible">
+							<!-- Start F_PLAYERPSEUDNEWGRP01 -->
+							<q-row v-if="controls.F_PLAYER__PLAYER__NAME.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER__PLAYER__NAME.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER__PLAYER__NAME.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER__PLAYER__NAME"
+										v-on="controls.F_PLAYER__PLAYER__NAME.handlers"
+										:loading="controls.F_PLAYER__PLAYER__NAME.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-text-field
+											v-bind="controls.F_PLAYER__PLAYER__NAME.props"
+											@blur="onBlur(controls.F_PLAYER__PLAYER__NAME, model.ValName.value)"
+											@change="model.ValName.fnUpdateValueOnChange" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER__PLAYER__BIRTHDATE"
+										v-on="controls.F_PLAYER__PLAYER__BIRTHDATE.handlers"
+										:loading="controls.F_PLAYER__PLAYER__BIRTHDATE.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-date-time-picker
+											v-if="controls.F_PLAYER__PLAYER__BIRTHDATE.isVisible"
+											v-bind="controls.F_PLAYER__PLAYER__BIRTHDATE.props"
+											:model-value="model.ValBirthdate.value"
+											@reset-icon-click="model.ValBirthdate.fnUpdateValue(model.ValBirthdate.originalValue ?? new Date())"
+											@update:model-value="model.ValBirthdate.fnUpdateValue($event ?? '')" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER__PLAYER__GENDER"
+										v-on="controls.F_PLAYER__PLAYER__GENDER.handlers"
+										:loading="controls.F_PLAYER__PLAYER__GENDER.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-select
+											v-if="controls.F_PLAYER__PLAYER__GENDER.isVisible"
+											v-bind="controls.F_PLAYER__PLAYER__GENDER.props"
+											@update:model-value="model.ValGender.fnUpdateValue" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER__PLAYER__HEIGHT_CM"
+										v-on="controls.F_PLAYER__PLAYER__HEIGHT_CM.handlers"
+										:loading="controls.F_PLAYER__PLAYER__HEIGHT_CM.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-numeric-input
+											v-if="controls.F_PLAYER__PLAYER__HEIGHT_CM.isVisible"
+											v-bind="controls.F_PLAYER__PLAYER__HEIGHT_CM.props"
+											@update:model-value="model.ValHeight_cm.fnUpdateValue" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<q-row v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible">
+								<q-col
+									v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
+									cols="auto">
+									<base-input-structure
+										v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
+										class="i-text"
+										v-bind="controls.F_PLAYER__PLAYER__POSITION"
+										v-on="controls.F_PLAYER__PLAYER__POSITION.handlers"
+										:loading="controls.F_PLAYER__PLAYER__POSITION.props.loading"
+										:reporting-mode-on="reportingModeCAV"
+										:suggestion-mode-on="suggestionModeOn">
+										<q-select
+											v-if="controls.F_PLAYER__PLAYER__POSITION.isVisible"
+											v-bind="controls.F_PLAYER__PLAYER__POSITION.props"
+											@update:model-value="model.ValPosition.fnUpdateValue" />
+									</base-input-structure>
+								</q-col>
+							</q-row>
+							<!-- End F_PLAYERPSEUDNEWGRP01 -->
+						</q-group-box-container>
 					</q-col>
 				</q-row>
 			</template>
@@ -531,6 +551,20 @@
 				},
 
 				controls: {
+					F_PLAYERPSEUDNEWGRP01: new fieldControlClass.GroupControl({
+						id: 'F_PLAYERPSEUDNEWGRP01',
+						name: 'NEWGRP01',
+						size: 'block',
+						label: '',
+						placeholder: '',
+						labelPosition: computed(() => this.labelAlignment.topleft),
+						isCollapsible: false,
+						anchored: false,
+						directChildren: ['F_PLAYER__PLAYER__NAME', 'F_PLAYER__PLAYER__BIRTHDATE', 'F_PLAYER__PLAYER__GENDER', 'F_PLAYER__PLAYER__HEIGHT_CM', 'F_PLAYER__PLAYER__POSITION'],
+						mustBeFilled: true,
+						controlLimits: [
+						],
+					}, this),
 					F_PLAYER__PLAYER__NAME: new fieldControlClass.StringControl({
 						modelField: 'ValName',
 						valueChangeEvent: 'fieldChange:player.name',
@@ -540,6 +574,7 @@
 						label: computed(() => this.Resources.NAME31974),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYERPSEUDNEWGRP01',
 						maxLength: 50,
 						controlLimits: [
 						],
@@ -553,6 +588,7 @@
 						label: computed(() => this.Resources.BIRTHDATE22743),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYERPSEUDNEWGRP01',
 						dateTimeType: 'date',
 						mustBeFilled: true,
 						controlLimits: [
@@ -567,6 +603,7 @@
 						label: computed(() => this.Resources.GENDER44172),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYERPSEUDNEWGRP01',
 						maxLength: 6,
 						arrayName: 'Gender',
 						helpShortItem: 'None',
@@ -583,6 +620,7 @@
 						label: computed(() => this.Resources.HEIGHT11955),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYERPSEUDNEWGRP01',
 						maxIntegers: 10,
 						maxDecimals: 0,
 						controlLimits: [
@@ -597,6 +635,7 @@
 						label: computed(() => this.Resources.POSITION54869),
 						placeholder: '',
 						labelPosition: computed(() => this.labelAlignment.topleft),
+						container: 'F_PLAYERPSEUDNEWGRP01',
 						maxLength: 2,
 						arrayName: 'Position',
 						helpShortItem: 'None',
@@ -614,6 +653,7 @@
 				}),
 
 				groupFields: readonly([
+					'F_PLAYERPSEUDNEWGRP01',
 				]),
 
 				tableFields: readonly([

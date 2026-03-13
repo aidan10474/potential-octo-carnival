@@ -186,6 +186,84 @@ export class QArrayPosition
 }
 
 /**
+ * The Rating array.
+ */
+export class QArrayRating
+{
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	constructor(fnResources)
+	{
+		this.type = 'N'
+		this.pluralName = 'RATING45804'
+		this.singularName = 'RATING45804'
+
+		this.elements = [
+			new Option({
+				num: 1,
+				key: 1,
+				resourceId: '_137648',
+				fnResources,
+			}),
+			new Option({
+				num: 2,
+				key: 2,
+				resourceId: '_240153',
+				fnResources,
+			}),
+			new Option({
+				num: 3,
+				key: 3,
+				resourceId: '_340014',
+				fnResources,
+			}),
+			new Option({
+				num: 4,
+				key: 4,
+				resourceId: '_437743',
+				fnResources,
+			}),
+			new Option({
+				num: 5,
+				key: 5,
+				resourceId: '_537084',
+				fnResources,
+			}),
+			new Option({
+				num: 6,
+				key: 6,
+				resourceId: '_638533',
+				fnResources,
+			}),
+			new Option({
+				num: 7,
+				key: 7,
+				resourceId: '_737370',
+				fnResources,
+			}),
+			new Option({
+				num: 8,
+				key: 8,
+				resourceId: '_834891',
+				fnResources,
+			}),
+			new Option({
+				num: 9,
+				key: 9,
+				resourceId: '_936792',
+				fnResources,
+			}),
+			new Option({
+				num: 10,
+				key: 10,
+				resourceId: '_1012719',
+				fnResources,
+			}),
+		]
+
+	}
+}
+
+/**
  * The s_modpro array.
  */
 export class QArrayS_modpro
@@ -456,6 +534,7 @@ export class QArrayS_tpproc
 export default {
 	QArrayGender,
 	QArrayPosition,
+	QArrayRating,
 	QArrayS_modpro,
 	QArrayS_module,
 	QArrayS_prstat,

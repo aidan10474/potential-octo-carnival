@@ -132,6 +132,9 @@
   <data name="DURATION40426" xml:space="preserve">
     <value>Duration</value>
   </data>
+  <data name="_936792" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="EM_EXECUCAO53706" xml:space="preserve">
     <value>Em execução</value>
   </data>
@@ -146,6 +149,9 @@
   </data>
   <data name="ADMINISTRATOR27313" xml:space="preserve">
     <value>Administrator</value>
+  </data>
+  <data name="_137648" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="TEAMS47429" xml:space="preserve">
     <value>Teams</value>
@@ -249,6 +255,12 @@
   <data name="PLAYERS11892" xml:space="preserve">
     <value>Players</value>
   </data>
+  <data name="_240153" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PLAYER_TEAMS24459" xml:space="preserve">
+    <value>Player teams</value>
+  </data>
   <data name="CONSULTA40695" xml:space="preserve">
     <value>Consulta</value>
   </data>
@@ -305,6 +317,9 @@
   </data>
   <data name="SKILL_PLAYER00402" xml:space="preserve">
     <value>Skill_Player</value>
+  </data>
+  <data name="_340014" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="SENDS_EMAIL_12942" xml:space="preserve">
     <value>Sends email?</value>
@@ -477,11 +492,20 @@
   <data name="PROCESS_TYPES19050" xml:space="preserve">
     <value>Process Types</value>
   </data>
+  <data name="PLAYER_SKILLS12567" xml:space="preserve">
+    <value>Player skills</value>
+  </data>
+  <data name="_537084" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="SENDS_ATTACHMENT_64661" xml:space="preserve">
     <value>Sends attachment?</value>
   </data>
   <data name="PROCESS_TYPE25967" xml:space="preserve">
     <value>Process type</value>
+  </data>
+  <data name="_834891" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="LOGIN_ATTEMPTS62337" xml:space="preserve">
     <value>Login attempts</value>
@@ -491,6 +515,9 @@
   </data>
   <data name="CENTER62779" xml:space="preserve">
     <value>Center</value>
+  </data>
+  <data name="_737370" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="TO55217" xml:space="preserve">
     <value>To</value>
@@ -528,8 +555,17 @@
   <data name="ROUTINE58306" xml:space="preserve">
     <value>Routine</value>
   </data>
+  <data name="_638533" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="DATE_STARTED24788" xml:space="preserve">
     <value>date_started</value>
+  </data>
+  <data name="PLAYER_TEAM08295" xml:space="preserve">
+    <value>Player team</value>
+  </data>
+  <data name="_1012719" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="UNIDADE_ORGANICA38383" xml:space="preserve">
     <value>Unidade orgânica</value>
@@ -557,6 +593,9 @@
   </data>
   <data name="CHANGED_ON19727" xml:space="preserve">
     <value>Changed on</value>
+  </data>
+  <data name="_437743" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="END_TIME53495" xml:space="preserve">
     <value>End time</value>
