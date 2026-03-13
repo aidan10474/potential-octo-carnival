@@ -289,7 +289,7 @@
 					route: 'form-F_PLAYER_TEAM',
 					area: 'PLAYER_TEAM',
 					primaryKey: 'ValCodplayer_team',
-					designation: computed(() => this.Resources.PLAYER_TEAM42526),
+					designation: computed(() => this.Resources.PLAYER_TEAM08295),
 					identifier: '', // Unique identifier received by route (when it's nested).
 					mode: '',
 					availableAgents: [],

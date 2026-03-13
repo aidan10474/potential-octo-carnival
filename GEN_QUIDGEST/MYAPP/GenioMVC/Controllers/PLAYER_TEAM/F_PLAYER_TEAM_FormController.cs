@@ -33,12 +33,12 @@ namespace GenioMVC.Controllers
 	{
 		#region NavigationLocation Names
 
-		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_CANCEL = new("PLAYER_TEAM42526", "F_player_team_Cancel", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "CANCEL" };
-		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_SHOW = new("PLAYER_TEAM42526", "F_player_team_Show", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "SHOW" };
-		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_NEW = new("PLAYER_TEAM42526", "F_player_team_New", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "NEW" };
-		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_EDIT = new("PLAYER_TEAM42526", "F_player_team_Edit", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "EDIT" };
-		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_DUPLICATE = new("PLAYER_TEAM42526", "F_player_team_Duplicate", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "DUPLICATE" };
-		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_DELETE = new("PLAYER_TEAM42526", "F_player_team_Delete", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "DELETE" };
+		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_CANCEL = new("PLAYER_TEAM08295", "F_player_team_Cancel", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "CANCEL" };
+		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_SHOW = new("PLAYER_TEAM08295", "F_player_team_Show", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "SHOW" };
+		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_NEW = new("PLAYER_TEAM08295", "F_player_team_New", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "NEW" };
+		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_EDIT = new("PLAYER_TEAM08295", "F_player_team_Edit", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "EDIT" };
+		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_DUPLICATE = new("PLAYER_TEAM08295", "F_player_team_Duplicate", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "DUPLICATE" };
+		private static readonly NavigationLocation ACTION_F_PLAYER_TEAM_DELETE = new("PLAYER_TEAM08295", "F_player_team_Delete", "Player_team") { vueRouteName = "form-F_PLAYER_TEAM", mode = "DELETE" };
 
 		#endregion
 

@@ -96,7 +96,7 @@
 			data-key="F_SKILL_PLAYER"
 			:data-loading="!formInitialDataLoaded || !isActiveForm">
 			<template v-if="formControl.initialized && showFormBody">
-				<q-row v-if="controls.F_SKILL_PLAYER__PLAYER__NAME.isVisible || controls.F_SKILL_PLAYER__SKILL_PLAYER__RATING.isVisible">
+				<q-row v-if="controls.F_SKILL_PLAYER__PLAYER__NAME.isVisible">
 					<q-col
 						v-if="controls.F_SKILL_PLAYER__PLAYER__NAME.isVisible"
 						cols="auto">
@@ -118,6 +118,8 @@
 								v-on="controls.F_SKILL_PLAYER__PLAYER__NAME.handlers" />
 						</base-input-structure>
 					</q-col>
+				</q-row>
+				<q-row v-if="controls.F_SKILL_PLAYER__SKILL_PLAYER__RATING.isVisible">
 					<q-col
 						v-if="controls.F_SKILL_PLAYER__SKILL_PLAYER__RATING.isVisible"
 						cols="auto">
@@ -268,7 +270,7 @@
 					route: 'form-F_SKILL_PLAYER',
 					area: 'SKILL_PLAYER',
 					primaryKey: 'ValCodskill_player',
-					designation: computed(() => this.Resources.SKILL_PLAYER00402),
+					designation: computed(() => this.Resources.PLAYER_SKILLS12567),
 					identifier: '', // Unique identifier received by route (when it's nested).
 					mode: '',
 					availableAgents: [],

@@ -33,12 +33,12 @@ namespace GenioMVC.Controllers
 	{
 		#region NavigationLocation Names
 
-		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_CANCEL = new("SKILL_PLAYER00402", "F_skill_player_Cancel", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "CANCEL" };
-		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_SHOW = new("SKILL_PLAYER00402", "F_skill_player_Show", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "SHOW" };
-		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_NEW = new("SKILL_PLAYER00402", "F_skill_player_New", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "NEW" };
-		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_EDIT = new("SKILL_PLAYER00402", "F_skill_player_Edit", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "EDIT" };
-		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_DUPLICATE = new("SKILL_PLAYER00402", "F_skill_player_Duplicate", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "DUPLICATE" };
-		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_DELETE = new("SKILL_PLAYER00402", "F_skill_player_Delete", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "DELETE" };
+		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_CANCEL = new("PLAYER_SKILLS12567", "F_skill_player_Cancel", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "CANCEL" };
+		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_SHOW = new("PLAYER_SKILLS12567", "F_skill_player_Show", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "SHOW" };
+		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_NEW = new("PLAYER_SKILLS12567", "F_skill_player_New", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "NEW" };
+		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_EDIT = new("PLAYER_SKILLS12567", "F_skill_player_Edit", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "EDIT" };
+		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_DUPLICATE = new("PLAYER_SKILLS12567", "F_skill_player_Duplicate", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "DUPLICATE" };
+		private static readonly NavigationLocation ACTION_F_SKILL_PLAYER_DELETE = new("PLAYER_SKILLS12567", "F_skill_player_Delete", "Skill_player") { vueRouteName = "form-F_SKILL_PLAYER", mode = "DELETE" };
 
 		#endregion
 
